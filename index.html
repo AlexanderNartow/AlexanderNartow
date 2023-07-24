@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Wetter</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+    background-image: url('https://avatarko.ru/img/kartinka/12/multfilm_Futurama_Bender_11740.jpg'); 
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+    .weather-container {
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .weather-icon {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+    .weather-item {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="weather-container">
+    <img class="weather-icon" id="weather-icon" src="" alt="Погода">
+    <div class="weather-item">
+      <strong>Город:</strong>
+      <span id="city"></span>
+    </div>
+    <div class="weather-item">
+      <strong>Широта:</strong>
+      <span id="latitude"></span>
+    </div>
+    <div class="weather-item">
+      <strong>Долгота:</strong>
+      <span id="longitude"></span>
+    </div>
+    <div class="weather-item">
+      <strong>Температура:</strong>
+      <span id="temperature"></span>°C
+    </div>
+    <div class="weather-item">
+      <strong>Скорость ветра:</strong>
+      <span id="windspeed"></span> м/с
+    </div>
+    <div class="weather-item">
+      <strong>Направление ветра:</strong>
+      <span id="winddirection"></span>
+    </div>
+    <div class="weather-item">
+      <strong>Время:</strong>
+      <span id="time"></span>
+    </div>
+  </div>
+  <script>
